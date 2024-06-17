@@ -4,12 +4,15 @@
 }
 
 body {
+    background-color: #f5f7fb;
+}
+
+.start-container {
     margin: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f5f7fb;
 }
 
 .start {
