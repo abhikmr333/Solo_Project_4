@@ -4,18 +4,13 @@
 }
 
 body {
+    margin: 0;
     background-color: #f5f7fb;
 }
 
-.start-container {
+.start {
     margin: 0;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.start {
     display: flex;
     flex-direction: column;
     justify-content: center;
