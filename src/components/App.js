@@ -54,12 +54,12 @@ export default function App() {
         const { target } = event;
         //change the color of the button
         if (target.nodeName === "BUTTON") {
-            //unselect previous selected button
-            const allSiblingButtons = event.target.parentElement.childNodes;
-            //unselecting all buttons
-            allSiblingButtons.forEach((btn) => (btn.className = "options"));
-            //select new button
-            target.className += " selected";
+            // //unselect previous selected button
+            // const allSiblingButtons = event.target.parentElement.childNodes;
+            // //unselecting all buttons
+            // allSiblingButtons.forEach((btn) => (btn.className = "options"));
+            // //select new button
+            // target.className += " selected";
             setQuestions((prevQuestions) => {
                 return prevQuestions.map((question) => {
                     return question.id === id
@@ -76,17 +76,17 @@ export default function App() {
 
     //mapping over the array to create multiple question elements
     const questionElements = questions.map((ques, index) => {
-        const questionText = ques.question;
         return (
             <Questions
                 key={index + 1}
                 question={ques.question}
                 options={ques.options}
-                correct_answer={ques.correctAnswer}
-                selected_answer={ques.selectedAnswer}
+                correctAnswer={ques.correctAnswer}
+                selectedAnswer={ques.selectedAnswer}
                 isSelected={ques.isSelected}
                 id={ques.id}
                 selectAnswer={(event) => selectAnswer(event, ques.id)}
+                checkAnswer={() => {}}
             />
         );
     });
