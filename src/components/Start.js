@@ -8,7 +8,7 @@ export default function Start() {
             <p className="start--description">
                 Press Start Quiz to start the quiz!
             </p>
-            <button className="start-button">Start quiz</button>
+            <button className="start--button">Start quiz</button>
         </main>
     );
 }

@@ -5,4 +5,43 @@
 
 body {
     margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f7fb;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start--title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    color: #293264;
+    margin-bottom: 0;
+}
+
+.start--description {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    color: #293264;
+}
+.start--button {
+    width: 13rem;
+    height: 4rem;
+    border: none;
+    background-color: #4d5b9e;
+    border-radius: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: #f5f7fb;
 }
