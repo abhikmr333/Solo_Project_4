@@ -70,7 +70,7 @@ body {
     color: #293264;
 }
 
-.options:active {
+.selected {
     background-color: #d6dbf5;
     border: none;
     font-weight: 600;
