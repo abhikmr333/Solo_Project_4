@@ -3,5 +3,6 @@ import Questions from "./Questions.js";
 import Start from "./Start.js";
 
 export default function App() {
-    return <Start />;
+    //mapping over the array to create multiple question elements
+    return <Questions />;
 }
