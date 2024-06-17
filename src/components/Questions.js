@@ -1,14 +1,14 @@
 import React from "react";
 
-export default function Questions() {
+export default function Questions(props) {
     return (
-        <section className="question-container">
-            <p className="question">How would one say goodbye in Spanish?</p>
-            <div calssName="options-container">
-                <button className="options"> Adios </button>
-                <button className="options"> Hola </button>
-                <button className="options"> Au Revoir </button>
-                <button className="options"> Salir </button>
+        <section className="question">
+            <p className="question-text">{props.question}</p>
+            <div className="options-container">
+                <button className="options">{props.options[0]}</button>
+                <button className="options"> {props.options[1]} </button>
+                <button className="options"> {props.options[2]} </button>
+                <button className="options"> {props.options[3]} </button>
             </div>
             <hr />
         </section>
